@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advanced Weather Forecast</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Advanced Weather Forecast</h1>
+    </header>
+
+    <main>
+        <!-- Search form to input the location -->
+        <section id="search">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+            <button id="geoLocationBtn">Use My Location</button>
+        </section>
+
+        <!-- Toggle between Celsius and Fahrenheit -->
+        <section id="unit-toggle">
+            <label>
+                <input type="radio" name="unit" id="celsius" checked> Celsius
+            </label>
+            <label>
+                <input type="radio" name="unit" id="fahrenheit"> Fahrenheit
+            </label>
+        </section>
+
+        <!-- Section to display current weather -->
+        <section id="current-weather">
+            <h2>Current Weather</h2>
+            <div id="weatherDetails">
+                <!-- Weather details will be populated here by JavaScript -->
+                <p id="location"></p>
+                <img id="weatherIcon" src="" alt="Weather Icon">
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+                <p id="visibility"></p>
+            </div>
+        </section>
+
+        <!-- Section to display hourly weather forecast -->
+        <section id="hourly-forecast">
+            <h2>Hourly Forecast</h2>
+            <div id="hourlyDetails">
+                <!-- Hourly forecast will be populated here -->
+            </div>
+        </section>
+
+        <!-- Section to display 7-day weather forecast -->
+        <section id="forecast">
+            <h2>7-Day Forecast</h2>
+            <div id="forecastDetails">
+                <!-- Forecast details will be populated here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Weather data provided by OpenWeatherMap API</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
